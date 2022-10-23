@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellary Store</title>
+    <link rel="stylesheet" href="./store.css">
+    <script src="./store.js" defer></script>
+</head>
+<body>
+    <div id="Fashion Jewellery">
+        <header>
+            <ul class='header'>
+                <li><a href="./home.html">HOME</a></li>
+                <li><a href="./store.html">STORE</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <a href="#cart" class="cart-holder">cart<span class='cart-number'>0</span></a>
+            </ul>
+            <h1>Fashion Jewellery</h1>
+        </header>
+        <section id="jewels" class="container">
+            <h2>Necklaces</h2>
+            <div id ="jewels-content">
+                <div id='album1'>
+                    <h3>Album 1</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://images.unsplash.com/photo-1618403088890-3d9ff6f4c8b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bmVja2xhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                                    <div class="prod-details">
+                        <span>$<span>2000</span></span>
+                        <button class="addtocart" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div id='album2'>
+                    <h3>Album 2</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://images.unsplash.com/photo-1644325819872-8368f5387bb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                                    <div class="prod-details">
+                        <span>$<span>1800</span></span>
+                        <button class="addtocart" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div id='album3'>
+                    <h3>Album 3</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://media.istockphoto.com/photos/jewellery-picture-id1005882238?k=20&m=1005882238&s=170667a&w=0&h=ZQZnOs6R25v9xJ2OmE2FyhGig6_adc5is6784G0QGTY=" alt="">
+                    </div>
+                                    <div class="prod-details">
+                        <span>$<span>2500</span></span>
+                        <button class="addtocart" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div id='album4'>
+                    <h3>Album 4</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://images.unsplash.com/photo-1636103952204-0b738c225264?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzA2fHxqZXdlbHJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                                    <div class="prod-details">
+                        <span>$<span>1500</span></span>
+                        <button class="addtocart" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="Earrings" class="container">
+            <h2>Earrings</h2>
+            <div id="Earrings-content">
+                <div id="t-shirt">
+                    <h3>Album 1</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://images.unsplash.com/photo-1536232038510-337303acd6e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjIwfHxqZXdlbHJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                                <div class="prod-details">
+                        <span>$<span>2000</span></span>
+                        <button class="addtocart" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+                <div id="coffee-cup">
+                    <h3>Album 2</h3>
+                    <div class="image-container">
+                        <img class="prod-images" src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGpld2Vscnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+                    </div>
+                                <div class="prod-details">
+                        <span>$<span>1600</span></span>
+                        <button class="addtocart" type='button'>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="cart" class="container" >
+            <h2>CART</h2>
+            <button class="cancel">X</button>
+            <div class="cart-row cart-header">
+                <span class='cart-item cart-column'>ITEM</span>
+                <span class='cart-price cart-column'>PRICE</span>
+                <span class='cart-quantity cart-column'>QUANTITY</span>
+            </div>
+            <div class='cart-items'>
+                <!-- <div class="cart-row">
+                    <span class='cart-item cart-column'>
+                        <img class='cart-img' src="img/Shirt.png" alt="">
+                        <span>T-Shirt</span>
+                    </span>
+                    <span class='cart-price cart-column'>$19.99</span>
+                    <span class='cart-quantity cart-column'>
+                        <input type="text">
+                        <button>REMOVE</button>
+                    </span>
+                </div>
+                <div class="cart-row">
+                    <span class='cart-item cart-column'>
+                        <img class='cart-img' src="/img/Album 3.png" alt="">
+                        <span>Album 3</span>
+                    </span>
+                    <span class='cart-price cart-column'>$9.99</span>
+                    <span class='cart-quantity cart-column'>
+                        <input type="text">
+                        <button>REMOVE</button>
+                    </span>
+                </div> -->
+            </div>
+            <div class="cart-total">
+                <span>
+                    <span class='total-title'> <strong>Total</strong>
+                        </span>
+                    $<span id='total-value'>0</span>
+                </span>
+            </div>
+            <button class='purchase-btn' type='button'>PURCHASE</button>
+        </section>
+    </div>
+    <!-- Toggle notification -->
+    <div id="container"></div>
+    <footer>
+        <div class="footer-title">
+            <h4>Bring sparkle to everyday life.</h4>
+        </div>
+        <div class="footer-icons">
+            <ul>
+                <li><a href="https://twitter.com">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </a></li>
+                <li><a href="https://YouTube.com">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMcAAACVCAMAAADbnR4IAAAAbFBMVEX/////AAD/4OD/8/P/MzP/7Oz/1NT/JCT/PT3/MDD/KSn/2dn/5eX/zs7/ycn/LCz/amr/+fn/xMT/tLT/OTn/Ghr/rKz/u7v/kZH/ERH/cXH/TU3/pqb/R0f/goL/WVn/m5v/e3v/iIj/YmKuWyCNAAACYklEQVR4nO3aa2+CMBiG4dLSqpwP6hBUFP//f5yFbZlZVqo2eev2XN+W8KH3CNDWMgYAAAAAAAAAAAAAAAAAAAAAAADeKIVMOI+VStMsq0ZZmioVc55IUVIPzyxJ69Ox6JbL5ToMV3keLbTNF/1XlOerMFxfr+ku52ZbcepB3yrVEAaP2bWZoB7+p+T8YMTkklIHTOTqqYwg2LxRJ2jlkxWaD3fk7KCjk9QVLI0cdAQ1dQY7ucgICuqXliicdOwS4o7k2ZfVB0Xcwd1kkD8gmaOOgbhj66ijJ+5oHHUsiDuMr6sitw8h7uhMY5Pq/Codxq85v87oF6/RYRzbuEza2y1NiGdY8x1MDhuLDuKlodXY0st8B/EH3fJ/nO3mOjLCCGbdcZ0XL80dFVmCJqw7GB+M19Kube/oYEwdDNfSThTlPR2M1d2vz8mWYvhf7uxg6a8zlZfq2B88vR/3PB9lZfqy0z4f5s2rmw7VGq8l3ouz7RDNzP4Q7ffDtqM2RwSv8T2vjKuUif/zK36cr/B/vls2disp4vWHcQXOmaisIgLy9aB5fV7Z75oSdxg/Cr3t4py+w9X+VU7cMf9hsEO9n6gcdVDv7/6V/Xa5dtMRE3cI8yzW1ob69yi2d9LRUv8+yNSjJzJueHASwLydY6cjvx1uzjNQP+WjcmancNaC+sfaD7KZ3b01ab24G6N43z8YcWiUB8/GdyXP6tPQ9gd9Im46EpdH0XQqTh+Fi/LpMNxaH4fri+NpW8WeJfxUCiH1GUV9SHEUj2cTpfD9dCIAAAAAAAAAAAAAAAAAAAAAAMB/8w4ekx8igXUoZAAAAABJRU5ErkJggg==" alt="">
+                </a></li>
+                <li><a href="https://facebook.com">
+                    <img src="data:image/png;base64,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" alt="">
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
